@@ -4,15 +4,19 @@
 // that will be updated by your code.
 const bookAnswerEl = document.getElementById("book-answer")
 const activityAnswerEl = document.getElementById("activity-answer")
+const colorAnswerEl = document.getElementById("color-answer");
 const submissionBtn = document.getElementById("submission-btn")
 
 
 // Declare a constant variable named "book" and assign
 // the name of your favorite book to that variable.
+const book = "1922"
+const color = "black"
 
 
 // Declare a mutable variable named "activity" and assign
 // an activity to it.
+let activity = "weight training"
 
 
 
@@ -25,12 +29,19 @@ function updateBookSentence() {
 function updateActivitySentence() {
     // Update this function 
     // (hint: it will be similiar to the previous function)
+    activityAnswerEl.innerText = activity
 
+}
+
+function updateColorSentence() {
+    colorAnswerEl.innerText = color
 }
 
 function render() {
     // Finish writing this function
     updateBookSentence();
+    updateActivitySentence();
+    updateColorSentence();
 
 }
 
